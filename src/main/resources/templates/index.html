@@ -15,5 +15,10 @@
     </th:block>
 </ul>
 </div>
+<select> <!-- add th:field="*{variable}" -->
+<div id="actor" th:each="actor : ${actors}">
+    <option th:value="${actor.getId()}" th:text="${actor.name}">Volvo</option>
+</div>
+</select>
 </body>
 </html>
